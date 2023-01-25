@@ -1,0 +1,32 @@
+.about
+	padding: 40px 0
+	&__title
+		position: relative
+		+before-line
+	&__wrapper
+		display: flex
+		justify-content: space-between
+		padding: 0 100px
+		margin-bottom: 20px
+	&__photo
+		img
+			max-width: 400px
+	&__descr
+		position: relative
+		width: 400px
+		div
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			color: $text-color
+			font-size: 20px
+			text-align: justify
+	&__list
+		padding: 0 50px
+		margin-bottom: 20px
+		li
+			display: inline
+			margin-right: 40px
+			color: $text-color
+			font-size: 18px

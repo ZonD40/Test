@@ -1,0 +1,31 @@
+.composition
+	padding: 40px 0
+	&__wrapper
+		display: grid
+		grid-template-columns: minmax(150px, 370px) 300px minmax(150px, 370px)
+		grid-template-rows: repeat(3, 1fr)
+		row-gap: 70px
+		column-gap: 50px
+		justify-items: center
+	&__item
+		img
+			display: block
+			margin: 0 auto
+			border-radius: 100%
+			width: 110px
+			height: 110px
+			margin-bottom: 10px
+		div
+			text-align: center
+			color: $text-color
+			font-size: 20px
+	&__photo
+		position: relative
+		grid-row: 1 / 4
+		grid-column: 2 / 3
+		img
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			height: 300px

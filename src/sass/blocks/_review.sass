@@ -1,0 +1,42 @@
+.review
+	padding: 40px 0
+	&__title
+		position: relative
+		+before-line
+	&__carusel
+		margin: 0 auto
+		width: 400px
+	&__item
+		margin: 0 auto
+		display: flex
+		flex-direction: column
+		justify-content: start
+		align-items: center
+		width: 400px
+		img
+			width: 200px
+			height: 200px
+			border-radius: 100%
+			margin-bottom: 20px
+	&__name
+		color: $text-color
+		font-size: 24px
+		font-weight: 700
+		margin-bottom: 20px
+	&__text
+		color: $text-color
+		font-size: 16px
+		text-align: justify
+.tns-nav
+	margin-top: 20px
+	display: flex
+	justify-content: center
+	button
+		border: none
+		border-radius: 100%
+		width: 20px
+		height: 20px
+		margin: 0 5px
+		background-color: #afecff
+	.tns-nav-active
+		background-color: $main-color
